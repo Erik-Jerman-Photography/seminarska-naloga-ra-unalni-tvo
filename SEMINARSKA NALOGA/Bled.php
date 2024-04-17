@@ -4,21 +4,18 @@ $username = "root";
 $password = "";
 $dbname = "moja_baza";
 
-// Ustvari povezavo
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Preveri povezavo
 if ($conn->connect_error) {
     die("Povezava ni uspela: " . $conn->connect_error);
 }
 
-// Pridobi podatke za izdelek Klevevž
-$sql = "SELECT * FROM izdelki WHERE id = 12"; // Predpostavljamo, da je izdelek Klevevž povezan s ID-jem 1
+$sql = "SELECT * FROM izdelki WHERE id = 12";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
-    $ime_izdelka = $row["ime"]; // Predpostavimo, da je ime stolpca v bazi "ime"
+    $ime_izdelka = $row["ime"];
     $opis = $row["opis"];
     $cena = $row["cena"];
     $slika = $row["slika"];

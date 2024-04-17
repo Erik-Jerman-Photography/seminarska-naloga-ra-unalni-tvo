@@ -27,7 +27,6 @@
     }
   }
 }
-/* Test website on real Safari 11+ */
 
 /* Safari 10.1 */
 @media not all and (min-resolution: 0.001dpcm) {
@@ -298,7 +297,6 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-/* _____ */
 
 .main__content h1 {
   font-size: 4rem;
@@ -340,14 +338,12 @@
 .main__content p {
   margin-top: 1rem;
   font-size: 2rem;
-  /* font-weight: bold; */
   color: #fff;
 }
 
 .main__content1 p {
   margin-top: 1rem;
   font-size: 1.5rem;
-  /* font-weight: bold; */
   color: #fff;
 }
 
@@ -405,11 +401,6 @@
   max-height: 70vh;
   max-width: 100%;
 }
-
-/* #main__slika:hover {
-  transform: scale(1.075);
-  transition: 0.5s;
-} */
 
 /* da se pravilno "raztegne" na tablici, telefonu */
 @media screen and (max-width: 960px) {
@@ -522,7 +513,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-/* zberi sliko in prilagodi velikost :) */
+
 .slika__container {
   display: flex;
   justify-content: flex;
