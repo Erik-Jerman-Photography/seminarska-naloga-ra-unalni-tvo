@@ -55,7 +55,7 @@
     <div class="slika">
       <h1>Trgovina</h1>
       <div class="slika__container">
-        <div class="slika__card" id="Klevevž">
+        <div class="slika__card" id="Klevevz">
           <h2>Klevevž</h2>
           <p>24mm, f/22, 1/8 s, ISO 100</p>
           <button><a href="klevevz.php">Več</a></button>

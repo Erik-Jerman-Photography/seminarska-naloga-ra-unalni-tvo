@@ -49,7 +49,7 @@
     <!-- slike -->
     <div class="slika--trgovina">
       <div class="slika__container--trgovina">
-        <div class="slika__card" id="Klevevž">
+        <div class="slika__card" id="Klevevz">
           <h2>Klevevž</h2>
           <p>24mm, f/22, 1/8 s, ISO 100</p>
           <button><a href="klevevz.php" target="_self">Več</a></button>
