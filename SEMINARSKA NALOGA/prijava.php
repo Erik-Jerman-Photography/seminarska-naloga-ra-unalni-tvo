@@ -52,9 +52,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Povezava ni uspela: " . $conn->connect_error);
 }
-
+if(!empty($_POST['username'])) {
 $username = $_POST['username'];
 $password = $_POST['password'];
+}
 
 $username = mysqli_real_escape_string($conn, $username);
 $password = mysqli_real_escape_string($conn, $password);
@@ -64,7 +65,6 @@ $result = $conn->query($sql);
 
 session_start();
 if (isset($_POST['username']) && isset($_POST['password'])) {
-
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {

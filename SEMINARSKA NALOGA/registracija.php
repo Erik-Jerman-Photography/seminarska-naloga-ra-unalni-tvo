@@ -56,12 +56,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Povezava ni uspela: " . $conn->connect_error);
 }
-
+if(!empty($_POST['username'])) {
 $username = $_POST['username'];
 $ime = $_POST['ime'];
 $priimek = $_POST['priimek'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+
 
 $username = mysqli_real_escape_string($conn, $username);
 $ime = mysqli_real_escape_string($conn, $ime);
@@ -88,6 +89,6 @@ if ($result->num_rows > 0) {
         echo "Napaka pri dodajanju novega uporabnika: " . $conn->error;
     }
 }
-
+}
 $conn->close();
 ?>
